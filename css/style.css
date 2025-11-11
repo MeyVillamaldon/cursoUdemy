@@ -1,0 +1,169 @@
+:root{
+--menuAzul:  #343e48 ;
+--celeste : #bfcff7;
+--celesteClaro : #dce4f7;
+--beige : #f8f3bf;
+--naranja : #d34017;
+--blanco : white;
+--hovernaranja :#fa8a09;
+}
+
+/*========== INTRO ==============*/
+
+html{
+    font-size:62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+    font-size:16px;
+     font-family: "Roboto Mono", monospace;
+     /*degradado fondo*/
+     background-image: linear-gradient(to top, var(--celesteClaro) 0% , var(--blanco) 50%);
+}
+h1{
+    font-size: 3.8rem;
+}
+h2{
+ font-size: 2.8rem;
+}
+h3{
+ font-size: 1.8rem;
+}
+h1,h2,h3{
+    text-align: center;
+}
+/*========== TITULO ==============*/
+
+.myname span{
+    font-size: 0.5em;
+    color: var(--naranja);
+}
+
+
+
+/*==========BOTONES ==============*/
+.btncontactar{
+    background-color: var(--naranja);
+    color: black;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+}
+.btncontactar:hover {
+    background: var(--hovernaranja);
+}
+
+/*========== NAVBAR ==============*/
+
+.contenedor{
+    max-width: 120rem;/*1200px*/
+    margin: 0 auto;/*arriba -abajo / derecha-izq*/
+}
+.nav-bg{
+ background-color: var(--menuAzul)
+}
+.nav-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700px;
+}
+.nav-principal a:hover{
+    background-color: var(--celesteClaro);
+    color: black;
+}
+
+
+/*========== BANNER ==============*/
+
+.banner{
+    background-image: url(../img/hero.jpg);
+    background-size: cover;/*adapta la img*/
+    height: 450px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.contenido-banner{
+    position: absolute;
+    background-color: rgba(21, 21, 21, 0.815);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.contenido-banner h2, .contenido-banner p{
+    color: var(--blanco);
+}
+
+.titulo:after{
+    content: " Web";/*contenido extra sin q este en html*/
+}
+
+.ubicacion{
+    display: flex;
+    align-items: center;
+}
+
+
+.sombra{
+   box-shadow: 0px 8px 13px 0px rgba(0,0,0,0.4);
+-webkit-box-shadow: 0px 8px 13px 0px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 8px 13px 0px rgba(0,0,0,0.4);
+background-color: var(--blanco);
+padding: 2rem;
+border-radius: 2rem;
+}
+
+
+
+
+
+
+
+
+
+/*========== MEDIAS QUERYS ==============*/
+
+
+@media (max-width : 768px){
+.nav-principal{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+}
+
+@media (min-width : 768px){
+  .btncontactar{
+    width: auto;
+  }
+}
+
+
+
+
+/* al texto le da borde de color
+ -webkit-text-fill-color:var(--naranja);
+    -webkit-text-stroke: 0.5px var(--blanco);
+*/
