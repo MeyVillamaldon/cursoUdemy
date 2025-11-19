@@ -13,11 +13,25 @@
     height: 25rem;
     width: 100%;
     margin: 2rem;
+
+    animation: entrar 1s ease-out forwards;
 }
+
+@keyframes entrar {
+    from {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
 .contexto{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }   
 .brevedad {
     color: var(--menuAzul);
@@ -95,11 +109,22 @@
 }
 
 
-.iconostec .icono:nth-child(4) {
-    grid-column: 1;
-}
 
-/* 5to icono → columna 3 */
-.iconostec .icono:nth-child(5) {
-  grid-column: 3;
+@media (max-width: 768px){
+ .lenguajes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icono p{
+    font-size: 1.5rem;
+}
+ .iconoslp, .iconosd, .iconosbd ,.iconostec{
+    grid-template-columns: repeat(2, 1fr);
+ }
+ .iconosd{
+    grid-template-columns: repeat(1, 1fr);
+ }
+
+
 }

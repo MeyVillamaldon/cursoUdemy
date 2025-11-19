@@ -1,0 +1,136 @@
+:root{
+--menuAzul:  #343e48 ;
+--celeste : #3f71f0;
+--celesteClaro : #dce4f7;
+--beige : #f8f3bf;
+--naranja : #d34017;
+--blanco : white;
+--hovernaranja :#fa8a09;
+}
+
+
+main{
+    padding: 4rem 2rem;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.formulario{
+    background-color: var(--menuAzul);
+    /*toma el ancho entre 60rem y 100%*/
+    width: min(60rem , 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+}
+
+.formulario legend{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--naranja);
+    margin-bottom: 2rem;
+}
+
+
+.campo {
+   margin-bottom: 1rem; 
+}
+
+.campo label{
+color: var(--blanco);
+font-weight: bold;
+margin-bottom: 0.5rem;
+display: block;
+}
+.campo textarea{
+    height: 20rem;
+}
+
+/*DARLE COLOR AL BACKgr DE UN INPUT x tipo
+.campo input[type="text"]{
+    background-color: red;
+}
+    o darles clase a los inputs y darles estilo
+*/
+
+.inpt-text{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    border: none;
+}
+
+.campo textarea.inpt-text {
+  min-height: 12rem;
+}
+
+
+.alinear-derecha{
+    display: flex;
+    width: 100%;
+  justify-content: flex-end;
+ 
+}
+
+.cto-banner{
+    background-image: url('../img/contactenos.png');
+    background-size: 30rem; 
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50%;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.bloque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+.bloque p{
+    margin-top: 10rem;
+    width: 80%;
+    color: var(--menuAzul);
+    text-align: justify;
+}
+
+main{
+     display: grid;
+    grid-template-columns: repeat(2, 1.5fr);
+    column-gap: 1rem;/*separacion de col*/
+    justify-content: center;
+}
+
+@media (max-width:768px){
+
+main{
+    display: block;
+    padding: 2rem;
+}
+.cto-banner{
+ background-size: 15rem;
+    min-height: 150px;
+}
+
+.bloque p{
+    margin-top: 1rem;
+    width: 80%;
+    text-align: justify;
+    font-style: italic;
+    font-size: 10px;
+}
+
+
+
+}

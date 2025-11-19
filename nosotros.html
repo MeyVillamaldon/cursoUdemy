@@ -22,24 +22,24 @@
     <div class="nav-bg">
       <nav class="nav-principal contenedor">
         <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
+        <a href="nosotros.html" class="active">Nosotros</a>
         <a href="clientes.html">Clientes</a>
         <a href="contacto.html">Contactos</a>
       </nav>
     </div>
-
-    <section class="banner_nosotros">
-      <div class="nosotros-banner"></div>
-      <div class="contexto">
-        <p class="brevedad">
-          Soy una desarrolladora freelance junior apasionada por la tecnología y
-          la creación de soluciones prácticas. Me especializo en desarrollo web
-          y estoy en constante aprendizaje para mejorar mis habilidades y
-          ofrecer un trabajo cada vez más profesional.
-        </p>
-      </div>
-    </section>
     <main>
+      <section class="banner_nosotros">
+        <div class="nosotros-banner"></div>
+        <div class="contexto">
+          <p class="brevedad">
+            Soy una desarrolladora freelance junior apasionada por la tecnología
+            y la creación de soluciones prácticas. Me especializo en desarrollo
+            web y estoy en constante aprendizaje para mejorar mis habilidades y
+            ofrecer un trabajo cada vez más profesional.
+          </p>
+        </div>
+      </section>
+
       <section class="lenguajes">
         <h3>Lenguajes de programación</h3>
         <div class="iconoslp">
@@ -324,5 +324,12 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <p>Todos los derechos reservados &copy; <span id="year"></span> Desarrollado por Kat.</p>
+    </footer>
+
+    <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
   </body>
 </html>

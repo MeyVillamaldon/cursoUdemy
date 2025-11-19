@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactenos</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="css/style.css" as="style" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/contactos.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+      <h1 class="myname">Kath Villamar M.<span>Freelancer</span></h1>
+    </header>
+    <div class="nav-bg">
+      <nav class="nav-principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="clientes.html">Clientes</a>
+        <a href="contacto.html" class="active">Contactos</a>
+      </nav>
+    </div>
+
+<main>
+    <div class="bloque">
+     <div class="cto-banner"></div>
+     <p>Si necesitas información, soporte o tienes una propuesta, no dudes en escribirnos.</p>
+     </div>
+     <section class="contactofrm">
+  
+        <form class="formulario">
+          <fieldset>
+            <legend>Contactenos llenando todos los campos</legend>
+            <div class="contenedor-campos">
+              <div class="campo">
+                <label for>Nombre</label>
+                <input
+                  class="inpt-text"
+                  type="text"
+                  placeholder="Ingresa tu nombre"
+                />
+              </div>
+              <div class="campo">
+                <label for>Telefono</label>
+                <input
+                  class="inpt-text"
+                  type="tel"
+                  placeholder="Ingrese telefono"
+                />
+              </div>
+              <div class="campo">
+                <label for>Email</label>
+                <input
+                  class="inpt-text"
+                  type="email"
+                  placeholder="Ingrese su email"
+                />
+              </div>
+              <div class="campo">
+                <label for>Mensaje</label>
+                <textarea
+                  class="inpt-text"
+                  placeholder="Dejanos tu mensaje"
+                ></textarea>
+              </div>
+              <div class="alinear-derecha flex">
+                <input
+                  class="btncontactar w-100"
+                  type="submit"
+                  value="Enviar"
+                />
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    
+</main>
+
+ <footer class="footer">
+      <p>Todos los derechos reservados &copy; <span id="year"></span> Desarrollado por Kat.</p>
+    </footer>
+
+    <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

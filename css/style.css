@@ -25,8 +25,11 @@ body{
     font-size:16px;
      font-family: "Roboto Mono", monospace;
      /*degradado fondo*/
-     /*background-image: linear-gradient(to top, var(--celesteClaro) 0% , var(--blanco) 50%);*/
-}
+     /*background-image: linear-gradient(to top, var(--celesteClaro) 0% , var(--blanco) 50%);*
+     margin: 0;
+     padding: 0;
+     scroll-behavior: smooth; /*suaviza el scrol*/
+    }
 h1{
     font-size: 3.8rem;
 }
@@ -46,6 +49,12 @@ h1,h2,h3{
 .myname span{
     font-size: 0.5em;
     color: var(--naranja);
+}
+
+nav a.active {
+    color: var(--naranja);   /* color destacado */
+    font-weight: bold;        /* opcional */
+    border-bottom: 2px solid var(--menuAzul); /* subrayado bonito */
 }
 
 /*==========BOTONES ==============*/
@@ -93,7 +102,18 @@ h1,h2,h3{
 }
 
 
+.footer{
+    background-color: var(--menuAzul);
+    color: var(--blanco);
+    text-align: center;
+    margin-top: 3px;
+    padding: 1px;
+}
 
+.footer p{
+    font-size: 1.5rem;
+    margin: 0;
+}
 
 /*========== MEDIAS QUERYS ==============*/
 @media (min-width: 768px){
@@ -109,6 +129,14 @@ h1,h2,h3{
     justify-content: space-between;
     align-items: center;
 }
+}
+
+@media (min-width: 1000px){
+  main{
+    max-width: 900px;
+     margin: 0 auto;
+  }
+ 
 }
 
 

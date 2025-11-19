@@ -22,7 +22,7 @@
     </header>
     <div class="nav-bg">
       <nav class="nav-principal contenedor">
-        <a href="index.html">Inicio</a>
+        <a href="index.html" class="active">Inicio</a>
         <a href="nosotros.html">Nosotros</a>
         <a href="clientes.html">Clientes</a>
         <a href="contacto.html">Contactos</a>
@@ -60,13 +60,13 @@
         <a href="#" class="btncontactar">Contactar </a>
       </div>
     </section>
-
-    <main class="contenedor sombra">
+<main>
+    <div class="contenedor sombra">
       <h2>Mis servicios</h2>
 
       <div class="servicios">
         <section class="servicio">
-          <h3>Desarrocontacto.htmlllo No Code</h3>
+          <h3>Desarrollo No Code</h3>
 
           <div class="icono">
             <svg
@@ -198,9 +198,14 @@
           </fieldset>
         </form>
       </section>
+    </div>
     </main>
     <footer class="footer">
-      <p>Todos los derechos reservados &copy; kat.</p>
+      <p>Todos los derechos reservados &copy; <span id="year"></span> Desarrollado por Kat.</p>
     </footer>
+
+    <script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
   </body>
 </html>
